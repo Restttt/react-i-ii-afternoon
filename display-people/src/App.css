@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(0, 152, 212); 
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  color: black;
+  margin-left: 10%;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+div.main {
+  width: 100vw;
+  height: 90vh;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  align-items: center;      /*centers*/
+  justify-content: center;      /*centers*/
+}
+
+
+
+
+
+/*Holds flash card and holds the footer*/
+div.content {
+  width: 800px;
+  height: 400px;
+  background-color: rgb(221, 221, 221);
+}
+/*the whole flash card*/
+div.flashCard {
+  height: 85%;
+  width: 100%;                     /*Change*/
+}
+
+
+
+
+
+/* heading that holds the 1/25 number*/
+div.flashCard .header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.flashCard .header .number  {
+  width: 20%;
+  height: 100%;                             /*Change*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/*the div that holds the card information*/
+div.info {
+  width: 50%;
+  height: 100%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+div.info .name {
+  width: fit-content; /*because im using a border to get the line underneath farther away you use fit content to make it so the line stops*/
+  font-size: 30px;
+  font-weight: 700;
+  text-justify: newspaper;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(0, 152, 212); 
+}
+
+/*details*/
+div.info div.details {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+div.info div.details span {
+  font-size: 20px;
+  font-weight: 525;
+}
+
+div.info div.details span.heavy {
+  font-weight: 700;
+}
+
+
+/*Hobbies*/
+div.info div.hobbies {
+  margin-top: 8%;
+  overflow: hidden;
+}
+
+div.info div.hobbies span {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+div.info ol {
+  margin-top: 1%;
+  margin-left: 7%;
+  font-size: 18px;
+  font-weight: 625;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+div.footer {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(221, 221, 221);
+}
+
+
+
+
+/*left*/
+div.footer .left{
+  height: 100%;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+
+/*middle*/
+div.footer div.middle{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+}
+
+
+div.footer div.middle .left{
+  width: 30%;
+  height: 50%;
+  background-color: rgb(0, 150, 196);
+  border-color: rgb(0, 150, 196);
+  border-width: 1px;
+  border-radius: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+div.footer div.middle .middle{
+  width: 30%;
+  height: 50%;
+  background-color: rgb(0, 150, 196);
+  border-color: rgb(0, 150, 196);
+  border-width: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+div.footer div.middle .right{
+  width: 30%;
+  height: 50%;
+  background-color: rgb(0, 150, 196);
+  border-color: rgb(0, 150, 196);
+  border-width: 1px;
+  border-radius: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+
+/*right*/
+div.footer .right{
+  height: 100%;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+
+
+
+.headerExtra {
+  width:100vw;
+  height:100vh;
+  background-color: black;
+}
